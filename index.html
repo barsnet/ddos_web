@@ -1,0 +1,162 @@
+<!doctype html>
+<!-- язык -->
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8"> <!-- кодировка -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- мета -->
+    <title>webddos</title> <!-- title -->
+    <link rel="stylesheet" href="/resources/css/style.css"> <!-- css -->
+    <style>
+        #draggable {
+            width: 150px;
+            height: 150px;
+            padding: 0.5em;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="resources/js/script.js"></script>
+</head>
+
+<body>
+    <!-- <video src="video/haker_i_banan.mp4" class="loader" autoplay controls></video> -->
+
+
+    <div class="desktop">
+
+
+        <div class="icons">
+            <div class="window_icon window_icon_hak" onclick="$('#window_hak').toggleClass('hide')">
+                <img src="img/haker_i_banan_512.png" alt="" srcset="" width="32px" height="32px">
+            </div>
+            <div class="window_icon window_icon_tg" onclick="$('#window_tg').toggleClass('hide')">
+                <img src="img/telegram.png" alt="" srcset="" width="32px" height="32px">
+            </div>
+            <div class="window_icon window_icon_ds" onclick="$('#window_ds').toggleClass('hide')">
+                <img src="img/discord.png" alt="" srcset="" width="32px" height="32px">
+            </div>
+            <div class="window_icon window_icon_wa" onclick="$('#window_wp').toggleClass('hide')">
+                <img src="img/whatsapp.png" alt="" srcset="" width="32px" height="32px">
+            </div>
+            <div class="window_icon window_icon_yt" onclick="$('#window_yt').toggleClass('hide')">
+                <img src="img/youtube.png" alt="" srcset="" width="32px" height="32px">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="window_tg" class="ui-widget-content window hide" style="width: 600px; left: 0px;top: 0px;">
+        <div class="headerbar">
+            <div class="window_icon">
+                img
+            </div>
+            <div class="window_title">
+                window
+            </div>
+            <div class="window_contols">
+                <div class="window_minimizebtn">
+                    <span></span>
+                </div>
+                <div class="window_maximizebtn">
+                    <span class="x"></span>
+                    <span class="y"></span>
+                </div>
+                <div class="window_closebtn" onclick="$('#window_tg').toggleClass('hide')">×</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="tg"></div>
+        </div>
+    </div>
+
+    <div id="window_hak" class="ui-widget-content window hide" style="width: 600px; left: 0px;top: 0px;">
+        <div class="headerbar">
+            <div class="window_icon">
+                <img src="img/haker_i_banan_512.png" alt="" height="16px" width="16px">
+            </div>
+            <div class="window_title">
+                хакер и банан
+            </div>
+            <div class="window_contols">
+                <div class="window_minimizebtn">
+                    <span></span>
+                </div>
+                <div class="window_maximizebtn">
+                    <span class="x"></span>
+                    <span class="y"></span>
+                </div>
+                <div class="window_closebtn" onclick="$('#window_hak').toggleClass('hide')">×</div>
+            </div>
+        </div>
+        <div class="content">
+            <video src="video/haker_i_banan.mp4" controls style="max-width: 100%;max-height: 100%;"></video>
+        </div>
+    </div>
+    <div id="window_ds" class="ui-widget-content window hide" style="width: 600px; left: 0px;top: 0px;">
+        <div class="headerbar">
+            <div class="window_icon">
+                img
+            </div>
+            <div class="window_title">
+                window
+            </div>
+            <div class="window_contols">
+                <div class="window_minimizebtn">
+                    <span></span>
+                </div>
+                <div class="window_maximizebtn">
+                    <span class="x"></span>
+                    <span class="y"></span>
+                </div>
+                <div class="window_closebtn"  onclick="$('#window_ds').toggleClass('hide')">×</div>
+            </div>
+        </div>
+    </div>
+    <div id="window_wp" class="ui-widget-content window hide" style="width: 600px; left: 0px;left:0px">
+        <div class="headerbar">
+            <div class="window_icon">
+                img
+            </div>
+            <div class="window_title">
+                window
+            </div>
+            <div class="window_contols">
+                <div class="window_minimizebtn">
+                    <span></span>
+                </div>
+                <div class="window_maximizebtn">
+                    <span class="x"></span>
+                    <span class="y"></span>
+                </div>
+                <div class="window_closebtn" onclick="$('#window_wp').toggleClass('hide')">×</div>
+            </div>
+        </div>
+    </div>
+    <div id="window_yt" class="ui-widget-content window hide" style="width: 600px; left: 0px;left:0px">
+        <div class="headerbar">
+            <div class="window_icon">
+                img
+            </div>
+            <div class="window_title">
+                window
+            </div>
+            <div class="window_contols">
+                <div class="window_minimizebtn">
+                    <span></span>
+                </div>
+                <div class="window_maximizebtn">
+                    <span class="x"></span>
+                    <span class="y"></span>
+                </div>
+                <div class="window_closebtn" onclick="$('#window_yt').toggleClass('hide')">×</div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

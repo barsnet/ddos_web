@@ -1,0 +1,149 @@
+@import url(//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css)
+*
+	box-sizing: border-box
+	// border: 1px solid red
+	transition: 0.2s
+
+.loader
+	z-index: 9999
+	width: 100%
+	height: 100%
+	position: absolute
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+body,html
+	margin: 0
+	padding: 0
+	position: absolute
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	overflow: hidden
+body
+	background: #000 url(../../img/ddos.jpg) no-repeat center center
+	background-size: cover
+table
+	font-size: 1em
+
+.ui-draggable, .ui-droppable
+	background-position: top
+.window
+	position: relative
+	
+	transition: 0.01s
+	min-height: 100px
+	min-width: 200px
+	overflow-y: auto
+	overflow-x: hidden
+	.headerbar
+		// position: fixed
+		// max-width: 100%
+		width: 100%
+
+		height: 32px
+		overflow: hidden
+		display: flex
+		justify-content: space-between
+		flex-wrap: nowrap
+		// align-items: center
+		background: #e7eaed
+		.window_icon
+			// padding-left: 7px
+			// padding-top: 8px
+			// padding-right: 7px
+			cursor: move
+			padding: 8px
+			&:hover
+				background: #cbced0
+		.window_title
+			// padding-top: 8px
+			padding: 8px
+			cursor: move
+			&:hover
+				background: #cbced0
+		.window_contols
+			cursor: crosshair
+			// padding-right: 7px
+			display: flex
+			flex-basis: 19%
+			.window_minimizebtn
+				flex-basis: 30%
+				display: flex
+				justify-content: center
+				align-items: center
+				position: relative
+				max-width: 50%
+				span
+					width: 10px
+					height: 1px
+					background: #000
+				&:hover
+					background: #cbced0
+			.window_maximizebtn
+				flex-basis: 30%
+				// display: flex
+				// justify-content: center
+				// align-items: center
+				position: relative
+				span.x
+					content: ''
+					position: absolute
+					width: 10px
+					height: 10px
+					top: calc( 50% - 1px )
+					left: calc( 50% + 1px )
+					transform: translateY(-50%) translateX(-50%)
+					// background: #000
+					border: 1px solid #000
+				span.y
+					position: absolute
+					width: 10px
+					height: 10px
+					top: 50%
+					margin-top: 1px
+
+					left: calc( 50% - 1px )
+					background: #e7eaed
+					border: 1px solid #000
+					transform: translateY(-50%) translateX(-50%)
+					&:hover
+						
+				&:hover
+					background: #cbced0
+					span.y
+						background: #cbced0
+			.window_closebtn
+
+				flex-basis: 40%
+				display: flex
+				justify-content: center
+				align-items: center
+				padding-top: 1px
+				font-size: 20px
+				&:hover
+					background: #e81123
+					color: #fff
+
+
+
+.icons
+	padding: 10px
+	.window_icon
+		margin: 5px
+		margin-top: 10
+
+
+
+.hide
+	display: none
+
+.content
+	min-width: 100%
+	min-height: 100%
+
+	iframe
+		width: 100%
+		height: 100%
